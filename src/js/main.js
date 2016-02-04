@@ -1,7 +1,7 @@
 //cache elements
 
 var $menu =  $('#menu');
-var $backBtn = $('#menu .backBtn');
+var $backBtn = $('#menu .backBtn').hide();
 
 
 
@@ -19,24 +19,24 @@ $('li', '#menu').on('click', function(e){
 		$('.menu-catgories', $menu).hide();
 		$('.'+categoryName, $menu).show();
 
-
 		//move secondary menu to the left;
-		$('.menu-container', $menu).velocity({translateX : '-300px'}, {duration: 350, ease: 'ease-in-out'});
-
-		
-		
+		$('.menu-container', $menu)
+			.velocity({translateX : '-300px'}, {duration: 350, ease: 'ease-in-out'});	
 	}
 
 	if (menuType === 'secondLevel') {
 		//move secondary menu to the left;
-		$('.menu-container', $menu).velocity({translateX : '-600px'}, {duration: 350, ease: 'ease-in-out'});
+		menuPosition = 'thirdLevel'
+		$('.menu-container', $menu)
+			.velocity({translateX : '-600px'}, {duration: 350, ease: 'ease-in-out'});
 	}
 
 	return false;
 });
 
-$backBtn.on('click', function(){
-	$('.menu-container', $menu).velocity({translateX : '0px'}, {duration: 200});
-	$('.category', $menu).html('Menu');
+$backBtn.on('click', function() {
 	$backBtn.hide();
+	$('.menu-container', $menu).velocity({translateX : '+=300px'}, {duration: 200});
+	$('.category', $menu).html('Menu');
+	//$backBtn.hide();
 });
