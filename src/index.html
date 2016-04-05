@@ -2,96 +2,116 @@
 <html class="no-js" lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Menu prototype 1</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-    <!-- build:css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Menu prototype 1</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
 </head>
 
 <body>
-    <div id="menu">
+  <div id="menu">
 
-        <div class="back">
-            <div class="category">Menu</div>
-            <div class="backBtn">&#9664; Back</div>
-        </div>
+    <div class="back">
+      <div class="category">Menu</div>
+      <div class="backBtn">&#9664; Back</div>
+    </div>
 
-        <div class="menu-container">
+    <div class="menu-container">
 
-            <ul class="primary">
-                <li><a data-cat="cat1" href="">Menu Item 1</a></li>
-                <li><a data-cat="cat2" href="">Menu Item 2</a></li>
-                <li><a data-cat="cat3" href="">Menu Item 3</a></li>
-                <li><a data-cat="cat4" href="">Menu Item 4</a></li>
-                <li><a data-cat="cat5" href="">Menu Item 5</a></li>
-                <li><a data-cat="cat6" href="">Menu Item 6</a></li>
-                <li><a data-cat="cat7" href="">Menu Item 7</a></li>
-                <li><a data-cat="cat8" href="">Menu Item 8</a></li>
-            </ul>
+      <ul class="primary">
+        <li data-depth="2">
+          <a data-cat="cat1" href="#">Group Exercise Classes</a>
+          <i class="fa fa-caret-right"></i>
+          <ul class="tier2">
+            <li><a href="">All Group Ex Classes</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">Beginners</a></li>
+            <li><a href="">Active Aging</a></li>
+            <li><a href="">Daily Schedule</a></li>
+            <li><a href="">My Zone</a></li>
+          </ul>
+        </li>
 
-            <div class="menu-catgories cat1">
+        <li data-depth="2">
+          <a data-cat="cat2" data-depth="2" href="#">Group Training Classes</a>
+          <i class="fa fa-caret-right"></i>
+          <ul class="tier2">
+            <li><a href="">Small Group Fitness</a></li>
+            <li><a href="">HIIT</a></li>
+            <li><a href="">Boot Camp</a></li>
+            <li><a href="">Performance Training</a></li>
+            <li><a href="">Triathlon/Marathon/Cycling (CompuTrainer)</a></li>
+            <li><a href="">Rowing</a></li>
+            <li><a href="">Beginners</a></li>
+            <li><a href="">Active Aging</a></li>
+            <li><a href="">Youth</a></li>
+          </ul>
+        </li>
 
-                <ul class="secondLevel">
-                    <li><a href="">Sub Menu Item 1</a></li>
-                    <li><a href="">Sub Menu Item 2</a></li>
-                    <li><a href="">Sub Menu Item 3</a></li>
-                    <li><a href="">Sub Menu Item 4</a></li>
-                    <li><a href="">Sub Menu Item 5</a></li>
-                    
-                </ul>
+        <li data-depth="2">
+          <a data-cat="cat3" data-depth="3" ref="#">Personal Training</a>
+          <i class="fa fa-caret-right"></i>
+          <ul class="tier2">
+            <li><a href="">Personal Training</a></li>
+            <li><a href="">Performance Coaching / Endurance</a></li>
+            <li><a href="">Training</a></li>
+            <li data-depth="3">
+              <a href="">Training Facilities</a>
+              <i class="fa fa-caret-right"></i>
+              <ul class="tier3">
+                <li><a href="">Performance Center</a></li>
+                <li><a href="">CV Room</a></li>
+                <li><a href="">Selectorized Room</a></li>
+                <li><a href="">Free Weight Room</a></li>
+              </ul>
+            </li>
 
-                <ul class="thirdLevel">
-                    <li><a href="">Sub2 Menu Item 1</a></li>
-                    <li><a href="">Sub2 Menu Item 2</a></li>
-                    <li><a href="">Sub2 Menu Item 3</a></li>
-                    <li><a href="">Sub2 Menu Item 4</a></li>
-                    <li><a href="">Sub2 Menu Item 5</a></li>
-                    <li><a href="">Sub2 Menu Item 6</a></li>
-                    <li><a href="">Sub2 Menu Item 7</a></li>
-                    <li><a href="">Sub2 Menu Item 8</a></li>
-                    <li><a href="">Sub2 Menu Item 9</a></li>
-                </ul>
-            </div>
+            <li><a href="">Fitness Assessments</a></li>
+            <li><a href="">Thai Bodywork</a></li>
+            <li><a href="">MYZONE</a></li>
+            <li><a href="">ActivTrax</a></li>
+            <li><a href="">30-Days to a New You</a></li>
+          </ul>
+        </li>
 
-            <div class="menu-catgories cat2">
-
-                <ul class="secondLevel">
-                    <li><a href="">Sub Menu Item 1 (cat2)</a></li>
-                    <li><a href="">Sub Menu Item 2 (cat2)</a></li>
-                    <li><a href="">Sub Menu Item 3 (cat2)</a></li>
-                    <li><a href="">Sub Menu Item 4 (cat2)</a></li>
-                    <li><a href="">Sub Menu Item 5 (cat2)</a></li>
-                    
-                </ul>
-
-                <ul class="thirdLevel">
-                    <li><a href="">Sub2 Menu Item 1 (cat2)</a></li>
-                    <li><a href="">Sub2 Menu Item 2 (cat2)</a></li>
-                    <li><a href="">Sub2 Menu Item 3 (cat2)</a></li>
-                    <li><a href="">Sub2 Menu Item 4 (cat2)</a></li>
-                    <li><a href="">Sub2 Menu Item 5 (cat2)</a></li>
-                    <li><a href="">Sub2 Menu Item 6 (cat2)</a></li>
-                    <li><a href="">Sub2 Menu Item 7 (cat2)</a></li>
-                    <li><a href="">Sub2 Menu Item 8 (cat2)</a></li>
-                    <li><a href="">Sub2 Menu Item 9 (cat2)</a></li>
-                </ul>
-            </div>
-
-        </div>
-
+        <li data-depth="2">
+          <a data-cat="cat4" href="#">Cycle</a>
+          <i class="fa fa-caret-right"></i>
+          <ul class="tier2">
+            <li><a href="">Indoor Cycling Group Classes</a></li>
+            <li><a href="">CompuTrainer</a></li>
+          </ul>
+        </li>
+        <li><a data-cat="cat5" href="#">Yoga</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat6" href="#">Pilates &amp; GYROTONIC</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat7" href="#">Aquatics</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat8" href="#">Raquet Sports</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat9" href="#">Golf</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat10" href="#">Gym</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat11" href="#">Nutrition</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat12" href="#">Family &amp; Kids</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat13" href="#">Dinning</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat14" href="#">Special Events</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat15" href="#">Salon &amp; Spa</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat16" href="#">Amenities</a><i class="fa fa-caret-right"></i></li>
+        <li><a data-cat="cat17" href="#">Around the Club</a><i class="fa fa-caret-right"></i></li>
+      </ul>
 
     </div>
-    <!-- build:js-footer -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/velocity/velocity.js"></script>
-    <script src="js/main.js"></script>
-    <!-- endbuild -->
+
+
+  </div>
+  <!-- build:js-footer -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/velocity/velocity.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>

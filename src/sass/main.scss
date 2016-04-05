@@ -13,8 +13,7 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-
-
+@import "font-awesome-4.5.0/scss/font-awesome.scss";
 body {
 	-webkit-font-smoothing: antialiased;
 }
@@ -23,6 +22,7 @@ body {
 	position: relative;
 	width: 300px;
 	overflow: hidden;
+	background: #ecc;
 
 	.back {
 		padding: 8px;
@@ -45,11 +45,10 @@ body {
 	}
 
 	.menu-catgories {
-		display: none;
+		/*display: none;*/
 	}
 
 	.menu-container {
-		width: 900px;
 		float: left;
 		position: relative;
 	}
@@ -61,15 +60,21 @@ body {
 		}
 	}
 
-	.secondLevel {
-		
+	.tier2 {
+		position: absolute;
+		left:300px;
+		top:0px;
+		display: none;
 		li {
 			background: #7e7e7e;
 		}
 	}
 
-	.thirdLevel {
-		
+	.tier3 {
+		position: absolute;
+		left:300px;
+		top:0px;
+		display: none;
 		li {
 			background: #3C3C3C;
 		}
@@ -84,18 +89,29 @@ body {
 		position: relative;
 
 		li {
-			padding: 18px;
-			margin: 2px 0;
+			height: 45px;
+			line-height: 45px;
+			padding: 0 0 0 10px;
+			overflow: hidden;
+			border-bottom: 1px solid #fff;
 			&:hover {
 				background: #62aab2;
 			}
 
+			i {
+				float: right;
+				font-size: 2em;
+				line-height: 2em;
+				padding: 0 15px 0 0;
+				color: #fff;
+			}
+
 			a {
-				display: block;
+				display: inline-block;
 				color: #fff;
 			}
 		}
 
-	} 
+	}
 
 }
